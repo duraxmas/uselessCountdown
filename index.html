@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Countdown</title>
+</head>
+
+<body>
+  <div class="timer">
+    <div class="timer__title">COUNTDOWN</div>
+    <div class="timer__box">
+      <div class="timer__item"  id="days">
+        <div class="circle-wrap">
+          <svg class="circle" viewBox="0 0 100 100">
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop class="gradient-1" offset="0%"></stop>
+              <stop class="gradient-2" offset="100%"></stop>
+            </linearGradient>
+            <circle class="segment" r="9.55%" cx="50%" cy="50%"></circle>
+          </svg>
+          <div class="timer__value">10</div>
+        </div>
+        <div class="timer__text">DAYS</div>
+      </div>
+      <div class="timer__item"  id="hours">
+        <div class="circle-wrap">
+          <svg class="circle" viewBox="0 0 100 100">
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop class="gradient-1" offset="0%"></stop>
+              <stop class="gradient-2" offset="100%"></stop>
+            </linearGradient>
+            <circle class="segment" r="9.55%" cx="50%" cy="50%"></circle>
+          </svg>
+          <div class="timer__value">10</div>
+        </div>
+        <div class="timer__text">HOURS</div>
+      </div>
+      <div class="timer__item"  id="minutes">
+        <div class="circle-wrap">
+          <svg class="circle" viewBox="0 0 100 100">
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop class="gradient-1" offset="0%"></stop>
+              <stop class="gradient-2" offset="100%"></stop>
+            </linearGradient>
+            <circle class="segment" r="9.55%" cx="50%" cy="50%"></circle>
+          </svg>
+          <div class="timer__value">10</div>
+        </div>
+        <div class="timer__text">MINUTES</div>
+      </div>
+      <div class="timer__item"  id="seconds">
+        <div class="circle-wrap">
+          <svg class="circle" viewBox="0 0 100 100">
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop class="gradient-1" offset="0%"></stop>
+              <stop class="gradient-2" offset="100%"></stop>
+            </linearGradient>
+            <circle class="segment" r="9.55%" cx="50%" cy="50%"></circle>
+          </svg>
+          <div class="timer__value">10</div>
+        </div>
+        <div class="timer__text">SECONDS</div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

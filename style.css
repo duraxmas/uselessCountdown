@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@400;700&display=swap');
+
+:root {
+  --gradient: linear-gradient(to right bottom,
+      rgb(113, 175, 175),
+      rgb(136, 9, 9)
+      )
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Big Shoulders Text", monospace;
+  background-color: rgb(78, 20, 37);
+  font-size: 34px;
+  font-weight: 700;
+  color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  text-align: center;
+  padding: 32px;
+  border-radius: 16px;
+  background: rgb(44, 37, 37);
+}
+
+.timer__title {
+  font-size: 44px;
+}
+
+.timer__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer__item {
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.timer__value {
+  font-size: 45px;
+  background: linear-gradient(90deg, #c70000, #7403b6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.timer__text {
+    margin-top: 15px;
+}
+
+
+.circle-wrap {
+  --size: 70px;
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Circle */
+.circle {
+  --offset: -10px;
+  position: absolute;
+  top: var(--offset);
+  right: var(--offset);
+  bottom: var(--offset);
+  left: var(--offset);
+  transform: rotate(-90deg);
+}
+
+.segment {
+  fill: transparent;
+  stroke: url(#gradient);
+  stroke-width: 0.99;
+  stroke-dasharray: 55 60;
+  stroke-linecap: round;
+  transform: scale(4.7);
+  transform-origin: center;
+  transition: stroke-dasharray 1s linear;
+}
+
+.gradient-1 {
+  stop-color: #c70000
+}
+
+.gradient-2 {
+  stop-color: #7403b6
+}
